@@ -4,7 +4,7 @@
       <div class="map-field z-10 p-0 w-full form-control form-input-bordered overflow-hidden relative">
         <l-map
           ref="map"
-          zoom="zoom"
+          :zoom="zoom"
           :center="center"
           :options="mapOptions"
           @ready="mountSearch"

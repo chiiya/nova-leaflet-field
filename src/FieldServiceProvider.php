@@ -18,8 +18,8 @@ class FieldServiceProvider extends ServiceProvider
         ], 'assets');
 
         Nova::serving(function (ServingNova $event) {
-            Nova::script('nova-leaflet-field', __DIR__.'/../dist/js/field.js');
-            Nova::style('nova-leaflet-field', __DIR__.'/../dist/css/field.css');
+            Nova::script('leaflet-field', __DIR__.'/../dist/js/field.js');
+            Nova::style('leaflet-field', __DIR__.'/../dist/css/field.css');
         });
     }
 

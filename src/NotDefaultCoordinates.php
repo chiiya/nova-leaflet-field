@@ -28,8 +28,8 @@ class NotDefaultCoordinates implements Rule
         $longitude = (float) $coordinates->longitude;
 
         return
-            abs($this->defaults[0] - $latitude) < PHP_FLOAT_EPSILON
-            && abs($this->defaults[1] - $longitude) < PHP_FLOAT_EPSILON;
+            abs($this->defaults[0] - $latitude) > PHP_FLOAT_EPSILON
+            && abs($this->defaults[1] - $longitude) > PHP_FLOAT_EPSILON;
     }
 
     /**

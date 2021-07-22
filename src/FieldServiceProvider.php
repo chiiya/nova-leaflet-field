@@ -1,6 +1,6 @@
 <?php
 
-namespace Dermingo\MapField;
+namespace Chiiya\NovaLeafletField;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Events\ServingNova;

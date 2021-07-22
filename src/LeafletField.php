@@ -1,8 +1,7 @@
 <?php
 
-namespace Dermingo\MapField;
+namespace Chiiya\NovaLeafletField;
 
-use Illuminate\Support\Facades\Log;
 use Laravel\Nova\Fields\Field;
 use Laravel\Nova\Http\Requests\NovaRequest;
 

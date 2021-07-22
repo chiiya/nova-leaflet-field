@@ -1,6 +1,6 @@
 <?php
 
-namespace Dermingo\MapField;
+namespace Chiiya\NovaLeafletField;
 
 use Illuminate\Contracts\Validation\Rule;
 

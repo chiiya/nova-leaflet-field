@@ -1,0 +1,46 @@
+{
+    "name": "chiiya/nova-leaflet-field",
+    "description": "Leaflet map field for Laravel Nova",
+    "keywords": ["nova", "map", "leaflet", "geocoding"],
+    "homepage": "https://github.com/chiiya/nova-leaflet-field",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Elisha Witte",
+            "email": "elishawitte@gmail.com",
+            "homepage": "https://github.com/chiiya",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "laravel/nova": "^3.0"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Chiiya\\NovaLeafletField\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Chiiya\\NovaLeafletField\\FieldServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
+    ]
+}

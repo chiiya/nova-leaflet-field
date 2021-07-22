@@ -1,0 +1,19 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "mix",
+        "watch": "mix watch",
+        "prod": "mix --production"
+    },
+    "devDependencies": {
+        "laravel-mix": "^6.0",
+        "laravel-nova": "^1.12"
+    },
+    "dependencies": {
+        "leaflet": "^1.7.1",
+        "leaflet-geosearch": "^3.3.2",
+        "vue": "^2.5.0",
+        "vue2-leaflet": "^2.7.1",
+        "vue2-leaflet-geosearch": "^1.0.6"
+    }
+}

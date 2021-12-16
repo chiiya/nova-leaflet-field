@@ -181,10 +181,16 @@ class LeafletField extends Field
     {
         $latitudeField = $this->meta['latitudeField'] ?? 'latitude';
         $longitudeField = $this->meta['longitudeField'] ?? 'longitude';
+        $latitude = $resource->{$latitudeField} !== null
+            ? (float) $resource->{$latitudeField}
+            : $this->defaultCoordinates[0];
+        $longitude = $resource->{$longitudeField} !== null
+            ? (float) $resource->{$longitudeField}
+            : $this->defaultCoordinates[1];
 
         $this->value = json_encode([
-            'latitude' => (float) $resource->{$latitudeField},
-            'longitude' => (float) $resource->{$longitudeField},
+            'latitude' => $latitude,
+            'longitude' => $longitude,
             'latitude_field' => $latitudeField,
             'longitude_field' => $longitudeField,
         ]);
